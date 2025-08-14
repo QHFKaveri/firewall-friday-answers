@@ -25,38 +25,38 @@
     h1 {
       text-align: center;
       color: #cacaca;
+      margin-top: 0;
+    }
+
+    .section {
+      margin-top: 40px;
     }
 
     .section h2 {
       border-bottom: 2px dashed #cccccc;
       padding-bottom: 10px;
       color: #f0f0f0;
+      margin-top: 0;
     }
 
     ul {
-      list-style-type: square;
-      padding-left: 20px;
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
     }
 
     li {
       margin-bottom: 15px;
       transition: all 0.3s ease;
-      padding: 10px;
-      border-radius: 8px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      line-height: 1.45;
+      background: rgba(255, 255, 255, 0.03);
     }
 
     li:hover {
-      background-color: rgba(255, 255, 255, 0.07);
-      transform: scale(1.02);
-    }
-
-    a {
-      color: #57bfff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      background-color: rgba(255, 255, 255, 0.08);
+      transform: scale(1.01);
     }
 
     .footer {
@@ -65,13 +65,32 @@
       font-size: 14px;
     }
 
-    .section {
-      margin-top: 40px;
+    a {
+      color: #57bfff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
 
     hr {
       border: 1px dotted #ccc;
       margin: 40px 0;
+    }
+
+    /* Small helper for code-like look on scrambles */
+    .scramble {
+      font-family: "Courier New", Courier, monospace;
+      background: rgba(0,0,0,0.25);
+      padding: 2px 6px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .answer {
+      font-weight: bold;
+    }
+    .dash {
+      opacity: 0.85;
     }
   </style>
 </head>
@@ -82,13 +101,31 @@
     <div class="section">
       <h2>🛡️ Secure or Suspect?</h2>
       <ul>
-        <li><b>1. Sneha:</b> 🔴 Suspect – If no login is needed, it's not secure — use trusted, password-protected cloud storage.</li>
-        <li><b>2. Aarav:</b> 🔴 Suspect – Banks never ask for sensitive info over calls — this is a classic phone phishing scam.</li>
-        <li><b>3. Meera:</b> 🔴 Suspect – App updates often contain security patches — skipping them can expose you to risks.</li>
-        <li><b>4. Rajat:</b> 🔴 Suspect – Random links can lead to malware — always verify before clicking.</li>
-        <li><b>5. Tanvi:</b> 🟢 Secure – Password managers are a safe and effective way to handle complex passwords.</li>
-        <li><b>6. Dev:</b> 🟡 Mostly Secure – Incognito helps, but avoid saving passwords on someone else's device.</li>
-        <li><b>7. Ayushi:</b> 🔴 Suspect – Pop-up virus alerts are usually fake — use your trusted antivirus instead.</li>
+        <li>Secure ✅ – VPN encrypts your connection, making public Wi-Fi safer for work.</li>
+        <li>Suspect 🚫 – Using the same password increases the damage if one account is hacked.</li>
+        <li>Suspect 🚫 – Unexpected order emails with links are a classic phishing trick.</li>
+        <li>Suspect 🚫 – No screen lock means anyone can access your data if your phone is lost or stolen.</li>
+        <li>Suspect 🚫 – QR codes can hide malicious links; only scan from trusted sources.</li>
+        <li>Secure ✅ – Official app stores reduce (but don’t completely remove) the risk of malware.</li>
+        <li>Suspect 🚫 – Attachments can hide malware; always scan before opening.</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <div class="section">
+      <h2>🔤 Cipher Scramble Answers</h2>
+      <ul>
+        <li><span class="scramble">YPRWESA</span> → <span class="answer">SPYWARE</span> <span class="dash">—</span> Software that secretly collects your data without consent.</li>
+        <li><span class="scramble">TBOETN</span> → <span class="answer">BOTNET</span> <span class="dash">—</span> A network of infected devices controlled by an attacker.</li>
+        <li><span class="scramble">KTOORIT</span> → <span class="answer">ROOTKIT</span> <span class="dash">—</span> Stealthy toolkit that hides an attacker’s presence and provides hidden admin access.</li>
+        <li><span class="scramble">GLEYKROEG</span> → <span class="answer">KEYLOGGER</span> <span class="dash">—</span> Records every keystroke you type, often used to steal credentials.</li>
+        <li><span class="scramble">FOSNOPIG</span> → <span class="answer">SPOOFING</span> <span class="dash">—</span> Forging a site, email, or caller ID to look legitimate and trick victims.</li>
+        <li><span class="scramble">MRHAPGIN</span> → <span class="answer">PHARMING</span> <span class="dash">—</span> Redirecting you to a fake website even if you typed the correct address.</li>
+        <li><span class="scramble">BOSXNAD</span> → <span class="answer">SANDBOX</span> <span class="dash">—</span> Isolated environment used to safely test suspicious files or programs.</li>
+        <li><span class="scramble">GPAHTCIN</span> → <span class="answer">PATCHING</span> <span class="dash">—</span> Applying updates that fix software security weaknesses.</li>
+        <li><span class="scramble">PUKABC</span> → <span class="answer">BACKUP</span> <span class="dash">—</span> Safe copy of your important data stored in a separate location.</li>
+        <li><span class="scramble">FOMTALCRUIT</span> → <span class="answer">MULTIFACTOR</span> <span class="dash">—</span> Extra verification beyond a password, such as a code or biometric scan.</li>
       </ul>
     </div>
 
@@ -96,16 +133,12 @@
 
     <div class="section">
       <h2>🕵️ Cyber Detective!</h2>
-      <p>
-        <strong>🕵️‍♂️ Case Closed:</strong>  
-        A hacker tricked Aarav into revealing his login credentials through social engineering and phishing. Because Aarav reused passwords and didn’t enable 2FA, the hacker got full access.
-      </p>
-      <p>
-        <strong>🔐 Lesson of the Week:</strong><br>
-        - Never click suspicious links, even from friends.<br>
-        - Avoid using public Wi-Fi without a VPN.<br>
-        - Use different passwords for every account.<br>
-        - Turn on 2FA for important accounts like email and banking.
+      <p><strong>🕵️‍♂️ Case Closed:</strong> A hacker tricked Aarav into revealing his login credentials through social engineering and phishing. Because Aarav reused passwords and didn’t enable 2FA, the hacker got full access.</p>
+      <p><strong>🔐 Lesson of the Week:</strong><br>
+        • Never click suspicious links, even from friends.<br>
+        • Avoid using public Wi-Fi without a VPN.<br>
+        • Use different passwords for every account.<br>
+        • Turn on 2FA for important accounts like email and banking.
       </p>
     </div>
 
