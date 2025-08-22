@@ -78,7 +78,6 @@
       margin: 40px 0;
     }
 
-    /* Small helper for code-like look on scrambles */
     .scramble {
       font-family: "Courier New", Courier, monospace;
       background: rgba(0,0,0,0.25);
@@ -92,42 +91,78 @@
     .dash {
       opacity: 0.85;
     }
+
+    .case-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Firewall Friday — Cyber Games</h1>
 
+    <!-- Secure or Suspect -->
     <div class="section">
       <h2>🛡️ Secure or Suspect?</h2>
       <ul>
-        <li>Secure ✅ – VPN encrypts your connection, making public Wi-Fi safer for work.</li>
-        <li>Suspect 🚫 – Using the same password increases the damage if one account is hacked.</li>
-        <li>Suspect 🚫 – Unexpected order emails with links are a classic phishing trick.</li>
-        <li>Suspect 🚫 – No screen lock means anyone can access your data if your phone is lost or stolen.</li>
-        <li>Suspect 🚫 – QR codes can hide malicious links; only scan from trusted sources.</li>
-        <li>Secure ✅ – Official app stores reduce (but don’t completely remove) the risk of malware.</li>
-        <li>Suspect 🚫 – Attachments can hide malware; always scan before opening.</li>
+        <li>1️⃣ Suspect 🚫 – Reusing passwords increases risk; one breach can expose multiple accounts.</li>
+        <li>2️⃣ Suspect 🚫 – Cracked software may contain malware; only download from trusted sources.</li>
+        <li>3️⃣ Secure ✅ – 2FA adds an extra security layer beyond the password.</li>
+        <li>4️⃣ Suspect 🚫 – Storing passwords in plain text makes them easy to steal; use a password manager.</li>
+        <li>5️⃣ Secure ✅ – Double-checking URLs helps avoid phishing websites.</li>
+        <li>6️⃣ Suspect 🚫 – Forwarding unverified messages spreads scams and misinformation.</li>
+        <li>7️⃣ Secure ✅ – Locking your device prevents unauthorized access when unattended.</li>
       </ul>
     </div>
 
     <hr />
 
+    <!-- Cyber Detective Case -->
     <div class="section">
-      <h2>🔤 Cipher Scramble Answers</h2>
-      <ul>
-        <li><span class="scramble">YPRWESA</span> → <span class="answer">SPYWARE</span> <span class="dash">—</span> Software that secretly collects your data without consent.</li>
-        <li><span class="scramble">TBOETN</span> → <span class="answer">BOTNET</span> <span class="dash">—</span> A network of infected devices controlled by an attacker.</li>
-        <li><span class="scramble">KTOORIT</span> → <span class="answer">ROOTKIT</span> <span class="dash">—</span> Stealthy toolkit that hides an attacker’s presence and provides hidden admin access.</li>
-        <li><span class="scramble">GLEYKROEG</span> → <span class="answer">KEYLOGGER</span> <span class="dash">—</span> Records every keystroke you type, often used to steal credentials.</li>
-        <li><span class="scramble">FOSNOPIG</span> → <span class="answer">SPOOFING</span> <span class="dash">—</span> Forging a site, email, or caller ID to look legitimate and trick victims.</li>
-        <li><span class="scramble">MRHAPGIN</span> → <span class="answer">PHARMING</span> <span class="dash">—</span> Redirecting you to a fake website even if you typed the correct address.</li>
-        <li><span class="scramble">BOSXNAD</span> → <span class="answer">SANDBOX</span> <span class="dash">—</span> Isolated environment used to safely test suspicious files or programs.</li>
-        <li><span class="scramble">GPAHTCIN</span> → <span class="answer">PATCHING</span> <span class="dash">—</span> Applying updates that fix software security weaknesses.</li>
-        <li><span class="scramble">PUKABC</span> → <span class="answer">BACKUP</span> <span class="dash">—</span> Safe copy of your important data stored in a separate location.</li>
-        <li><span class="scramble">FOMTALCRUIT</span> → <span class="answer">MULTIFACTOR</span> <span class="dash">—</span> Extra verification beyond a password, such as a code or biometric scan.</li>
-      </ul>
+      <h2>🕵️ Cyber Detective — Case Closed</h2>
+      <div class="case-box">
+        <p><strong>Case:</strong> Rohan fell for a captive-portal phishing / evil twin Wi-Fi trick. He entered his email and password on a fake login page while on public Wi-Fi, letting an attacker harvest his credentials. On insecure public Wi-Fi, attackers can also attempt man-in-the-middle (MITM) snooping.</p>
+      </div>
+      <div class="case-box">
+        <p><strong>What went wrong:</strong></p>
+        <ul>
+          <li>Trusted a public network without verifying it.</li>
+          <li>Entered credentials on an unverified login page.</li>
+          <li>Used public Wi-Fi without extra protection (e.g., VPN/2FA).</li>
+        </ul>
+      </div>
+      <div class="case-box">
+        <p><strong>Threat(s) involved:</strong></p>
+        <ul>
+          <li>Phishing via fake Wi-Fi portal (credential harvesting).</li>
+          <li>MITM risk on open networks.</li>
+        </ul>
+      </div>
+      <div class="case-box">
+        <p><strong>How to stay safe (Lesson of the Week):</strong></p>
+        <ul>
+          <li>Verify the network name with staff; beware look-alike SSIDs.</li>
+          <li>Avoid logging in to important accounts on public Wi-Fi; prefer mobile data/hotspot.</li>
+          <li>If you must use public Wi-Fi: use a VPN, and ensure sites show HTTPS (lock icon).</li>
+          <li>Enable 2FA on email, banking, and social apps to limit damage.</li>
+          <li>Never enter passwords on pop-ups or portals you didn’t expect.</li>
+        </ul>
+      </div>
+      <div class="case-box">
+        <p><strong>If this happens to you (Do this now):</strong></p>
+        <ul>
+          <li>Change the password of any account you entered there (and others using the same/similar password).</li>
+          <li>Enable 2FA immediately.</li>
+          <li>Check recent activity and sign out of active sessions.</li>
+          <li>Delete/forget the rogue network from your device.</li>
+          <li>Consider using a VPN for future public Wi-Fi use.</li>
+        </ul>
+      </div>
     </div>
+
     <div class="footer">
       Follow us on Instagram:<br />
       <a href="https://www.instagram.com/qhf_kcasc_club?utm_source=qr&igsh=dnl5enh2cjNrYXB3" target="_blank">@qhf_kcasc_club</a>
@@ -135,4 +170,3 @@
   </div>
 </body>
 </html>
-
