@@ -14,7 +14,7 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
       background: linear-gradient(135deg, #142c44, #1e3a5f);
       padding: 30px;
@@ -24,7 +24,7 @@
 
     h1 {
       text-align: center;
-      color: #cacaca;
+      color: #f0f0f0;
       margin-top: 0;
     }
 
@@ -35,28 +35,38 @@
     .section h2 {
       border-bottom: 2px dashed #cccccc;
       padding-bottom: 10px;
-      color: #f0f0f0;
+      color: #ffffff;
       margin-top: 0;
     }
 
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      margin: 0;
+    .puzzle {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
 
-    li {
-      margin-bottom: 15px;
-      transition: all 0.3s ease;
+    .puzzle strong {
+      color: #57bfff;
+    }
+
+    .fact {
+      background: rgba(255, 255, 255, 0.08);
       padding: 12px 14px;
       border-radius: 10px;
+      margin-bottom: 15px;
       line-height: 1.45;
-      background: rgba(255, 255, 255, 0.03);
+      transition: all 0.3s ease;
     }
 
-    li:hover {
-      background-color: rgba(255, 255, 255, 0.08);
+    .fact:hover {
+      background: rgba(255, 255, 255, 0.15);
       transform: scale(1.01);
+    }
+
+    hr {
+      border: 1px dotted #ccc;
+      margin: 40px 0;
     }
 
     .footer {
@@ -69,34 +79,9 @@
       color: #57bfff;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
-    }
-
-    hr {
-      border: 1px dotted #ccc;
-      margin: 40px 0;
-    }
-
-    .scramble {
-      font-family: "Courier New", Courier, monospace;
-      background: rgba(0,0,0,0.25);
-      padding: 2px 6px;
-      border-radius: 6px;
-      white-space: nowrap;
-    }
-    .answer {
-      font-weight: bold;
-    }
-    .dash {
-      opacity: 0.85;
-    }
-
-    .case-box {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 15px;
-      border-radius: 12px;
-      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -104,62 +89,110 @@
   <div class="container">
     <h1>Firewall Friday — Cyber Games</h1>
 
-    <!-- Secure or Suspect -->
+    <!-- Cipher Scramble -->
     <div class="section">
-      <h2>🛡️ Secure or Suspect?</h2>
-      <ul>
-        <li>1️⃣ Suspect 🚫 – Reusing passwords increases risk; one breach can expose multiple accounts.</li>
-        <li>2️⃣ Suspect 🚫 – Cracked software may contain malware; only download from trusted sources.</li>
-        <li>3️⃣ Secure ✅ – 2FA adds an extra security layer beyond the password.</li>
-        <li>4️⃣ Suspect 🚫 – Storing passwords in plain text makes them easy to steal; use a password manager.</li>
-        <li>5️⃣ Secure ✅ – Double-checking URLs helps avoid phishing websites.</li>
-        <li>6️⃣ Suspect 🚫 – Forwarding unverified messages spreads scams and misinformation.</li>
-        <li>7️⃣ Secure ✅ – Locking your device prevents unauthorized access when unattended.</li>
-      </ul>
+      <h2>🔐 Cipher Scramble</h2>
+
+      <div class="puzzle">
+        <p><strong>NMEINDLTAIHNEM</strong></p>
+        <p><strong>Answer:</strong> MAN-IN-THE-MIDDLE</p>
+        <p><em>Explanation:</em> Attackers secretly intercept and alter communications between two parties.</p>
+      </div>
+
+      <div class="puzzle">
+        <p><strong>FREOUTBERC</strong></p>
+        <p><strong>Answer:</strong> BRUTE FORCE</p>
+        <p><em>Explanation:</em> Systematically tries every possible password until the correct one is found.</p>
+      </div>
+
+      <div class="puzzle">
+        <p><strong>SEDENRPTNIEONCIC</strong></p>
+        <p><strong>Answer:</strong> INCIDENT RESPONSE</p>
+        <p><em>Explanation:</em> A structured approach to managing security breaches and minimizing damage.</p>
+      </div>
+
+      <div class="puzzle">
+        <p><strong>ABRTADEHAC</strong></p>
+        <p><strong>Answer:</strong> DATA BREACH</p>
+        <p><em>Explanation:</em> Unauthorized access or theft of sensitive or confidential data.</p>
+      </div>
+
+      <div class="puzzle">
+        <p><strong>LTAHABCK</strong></p>
+        <p><strong>Answer:</strong> BLACK HAT</p>
+        <p><em>Explanation:</em> A hacker who uses their skills for malicious or illegal purposes.</p>
+      </div>
+
+      <div class="puzzle">
+        <p><strong>TSRZEUORT</strong></p>
+        <p><strong>Answer:</strong> ZERO TRUST</p>
+        <p><em>Explanation:</em> Security model: “never trust, always verify.”</p>
+      </div>
+
+      <div class="puzzle">
+        <p><strong>HGAHSIN</strong></p>
+        <p><strong>Answer:</strong> HASHING</p>
+        <p><em>Explanation:</em> Converts data into a fixed-length string for integrity/security.</p>
+      </div>
+
+      <div class="puzzle">
+        <p><strong>GLTASIN</strong></p>
+        <p><strong>Answer:</strong> SALTING</p>
+        <p><em>Explanation:</em> Adding randomness to passwords before hashing to resist attacks.</p>
+      </div>
+
+      <div class="puzzle">
+        <p><strong>STINO</strong></p>
+        <p><strong>Answer:</strong> OSINT</p>
+        <p><em>Explanation:</em> Open-Source Intelligence from publicly available sources.</p>
+      </div>
+
+      <div class="puzzle">
+        <p><strong>SJKIANGNCEHSSIONI</strong></p>
+        <p><strong>Answer:</strong> SESSION HIJACKING</p>
+        <p><em>Explanation:</em> Stealing a valid session ID to impersonate a user.</p>
+      </div>
     </div>
 
     <hr />
 
-    <!-- Cyber Detective Case -->
+    <!-- Myth Busted or Fact Trusted -->
     <div class="section">
-      <h2>🕵️ Cyber Detective — Case Closed</h2>
-      <div class="case-box">
-        <p><strong>Case:</strong> Rohan fell for a captive-portal phishing / evil twin Wi-Fi trick. He entered his email and password on a fake login page while on public Wi-Fi, letting an attacker harvest his credentials. On insecure public Wi-Fi, attackers can also attempt man-in-the-middle (MITM) snooping.</p>
+      <h2>🧐 Myth Busted or Fact Trusted?</h2>
+
+      <div class="fact">
+        1️⃣ “Hackers only target big companies, not individuals.” <br>
+        ➡️ Myth ❌ – Individuals are often easier targets for phishing, scams, and identity theft.
       </div>
-      <div class="case-box">
-        <p><strong>What went wrong:</strong></p>
-        <ul>
-          <li>Trusted a public network without verifying it.</li>
-          <li>Entered credentials on an unverified login page.</li>
-          <li>Used public Wi-Fi without extra protection (e.g., VPN/2FA).</li>
-        </ul>
+
+      <div class="fact">
+        2️⃣ “Strong, unique passwords reduce the risk of hacking.” <br>
+        ➡️ Fact ✅ – Unique passwords make it much harder for hackers to use stolen credentials.
       </div>
-      <div class="case-box">
-        <p><strong>Threat(s) involved:</strong></p>
-        <ul>
-          <li>Phishing via fake Wi-Fi portal (credential harvesting).</li>
-          <li>MITM risk on open networks.</li>
-        </ul>
+
+      <div class="fact">
+        3️⃣ “All Wi-Fi networks with a password are safe to use.” <br>
+        ➡️ Myth ❌ – Public Wi-Fi (even with a password) can be unsafe if attackers are on the same network.
       </div>
-      <div class="case-box">
-        <p><strong>How to stay safe (Lesson of the Week):</strong></p>
-        <ul>
-          <li>Verify the network name with staff; beware look-alike SSIDs.</li>
-          <li>Avoid logging in to important accounts on public Wi-Fi; prefer mobile data/hotspot.</li>
-          <li>If you must use public Wi-Fi: use a VPN, and ensure sites show HTTPS (lock icon).</li>
-          <li>Enable 2FA on email, banking, and social apps to limit damage.</li>
-          <li>Never enter passwords on pop-ups or portals you didn’t expect.</li>
-        </ul>
+
+      <div class="fact">
+        4️⃣ “Phishing attacks can happen through SMS and phone calls, not just email.” <br>
+        ➡️ Fact ✅ – This is called smishing (SMS) and vishing (voice phishing).
       </div>
-      <div class="case-box">
-        <p><strong>If this happens to you (Do this now):</strong></p>
-        <ul>
-          <li>Change the password of any account you entered there (and others using the same/similar password).</li>
-          <li>Enable 2FA immediately.</li>
-          <li>Check recent activity and sign out of active sessions.</li>
-          <li>Delete/forget the rogue network from your device.</li>
-          <li>Consider using a VPN for future public Wi-Fi use.</li>
-        </ul>
+
+      <div class="fact">
+        5️⃣ “Incognito/Private mode hides your browsing from your internet provider.” <br>
+        ➡️ Myth ❌ – It only hides history locally, not from ISPs, employers, or websites.
+      </div>
+
+      <div class="fact">
+        6️⃣ “Updating software regularly helps patch security vulnerabilities.” <br>
+        ➡️ Fact ✅ – Updates fix loopholes that hackers exploit.
+      </div>
+
+      <div class="fact">
+        7️⃣ “Once something is deleted from social media, it’s gone forever.” <br>
+        ➡️ Myth ❌ – Posts may remain stored in backups, archives, or screenshots.
       </div>
     </div>
 
